@@ -176,7 +176,7 @@ function InputsLabels() {
         let label2 = document.createElement("label");
 
         input.setAttribute("type" , data.step1.inputts[info][0]);
-        input.setAttribute("placeholder" , data.step1.inputts[info][2]);
+        input.setAttribute("placeholder" , info);
         input.classList.add(data.step1.inputts[info][4])
 
         label1.classList = (data.step1.inputts[info][2]);
