@@ -38,7 +38,6 @@ const data = {
 
 
 let body = document.querySelector("body");
-console.log(body.clientWidth)
 
 let userData = {
     userName : "",
@@ -97,7 +96,6 @@ buttons[1].onclick = function () {
         f()
     } 
     updateErorr();
-    console.log(userData)
 
     steps.forEach(function (ele) {
         ele.dataset.number == nextStepNum || ele.dataset.finaly == nextStepNum ? ele.classList.add("active") : ele.classList.remove("active");
@@ -168,9 +166,6 @@ function updateErorr() {
 }
 // to update Erorr text Node if input value is not valid end
 
-
-
-
 // ################# ################# stpe one elements creat start 
 // creat inputs && labels start 
 function InputsLabels() {
@@ -223,8 +218,6 @@ function InputsLabels() {
             PhoneBoolen = NumberRe.test(value);
             userData.userPhone = value;
         });
-
-        // NameBoolen == false ? erorrs[0].innerHTML = "This field is required" : EmailBoolen == false ? erorrs[1].innerHTML = "This field is required" : erorrs[2].innerHTML = "This field is required"
     }
 // check user inputs data end
 // ################# ################# stpe one elements craet end
@@ -310,8 +303,6 @@ function MONTHYEARL() {
 
     yearl.classList.add("Yerly");
     yearl.innerHTML = "Yearly";
-
-
     // p end
 
     armCont.append(arm);
@@ -517,12 +508,6 @@ function optionClick() {
             }
         })
     });
-
-    // ch.forEach(ele => {
-    //     if (userData.userOption.includes(ele.dataset.id)) {
-    //         ele.setAttribute("checked" , true)
-    //     }
-    // })
 }
 // add options to userOption in userData object on click a option end 
 
