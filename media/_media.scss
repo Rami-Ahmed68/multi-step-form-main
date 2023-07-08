@@ -1,0 +1,133 @@
+
+$Moblie:770px;
+$Desktop:1440px;
+
+@import "../mixins/mixin";
+
+.container {
+    @media (max-width:$Moblie) {
+        @include cont(100%,100%,0px,$Magnolia);
+        @include flex(flex,center,center,wrap);
+        padding: 0px;
+        margin-bottom: 20px;
+        .buttons {
+            @include cont(90%,15%,0px,none);
+            @include flex(flex,space-between,end,nowrap);
+            position: absolute;
+            bottom: 0%;
+            left: 5%;
+            .back {
+                margin-bottom: 5%
+            }
+        }
+        .steps {
+            @include cont(100%,30%,0px,none);
+            background: url(./assets/images/bg-sidebar-mobile.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0%;
+            ul {
+                @include cont(70%,50%,0px,none);
+                margin: 5% auto;
+                @include flex(flex,center,center,nowrap);
+                li {
+                    .step-info {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .right-cont {
+            @include cont(90%,auto,10px,$White);
+            margin-top: -35%;
+            padding: 25px 10px;
+            position: absolute;
+            z-index: 100;
+            top: 41%;
+            overflow: unset;
+            .step-Title {
+                @include cont(100%,25%,0px,none);
+                margin-bottom:20px ;
+                h1 {
+                    @include cont(100%,60%,0px,none)
+                }
+                p {
+                    @include cont(80%,40%,0px,none)
+                }
+            }
+            .elements-stpe {
+                label {
+                    @include cont(40%,30px,0px,none);
+                    @include title(14px,500,$Marine-blue,center);
+                    margin: auto;
+                }
+                .erorr {
+                    color: red;
+                }
+                input {
+                    margin: auto;
+                    @include cont(90%,40px,5px,none);
+                }
+            }
+        }
+        .card {
+            @include cont(90%,80px,10px,none);
+            @include flex(flex,space-around,center,nowrap);
+            margin: 2% 0% 2% 5% ;
+            .info {
+                @include cont(70%,100%,0px,none);
+                padding: 0px;
+                h3 {
+                    @include cont(100%,30%,0px,none);
+                } 
+                p {
+                    @include cont(100%,30%,0px,none);
+                }
+            }
+        }
+
+        .option {
+            @include cont(90%,60px,10px,none);
+            margin: 2% 0% 2% 5% ;
+            padding-right: 20px;
+            .checkbox {
+                @include cont(12%,100%,0px,none);
+                padding:10px  5px;
+                overflow: hidden;
+                input {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+            }
+            .info {
+                @include cont(60%,100%,0px,none);
+                margin-left: -10%;
+                h2 {
+                    @include cont(100%,50%,0px,none);
+                    @include title(15px,500,$Marine-blue,start);
+                    @include flex(flex,start,center,nowrap);
+                }
+                p {
+                    @include title(12px,400,$Cool-gray,start);
+                    @include cont(100%,50%,0px,none);
+                    @include flex(flex,start,center,nowrap);
+                }
+            }
+            .price {
+                @include cont(15%,100%,0px,none);
+                @include title(13px,500,$Purplishblue,center);
+            }
+        }
+        .cont-2 {
+            @include cont(300px,50px,0px,none);
+            overflow: hidden;
+            padding-right: 5%;
+            h2 {
+                @include cont(70%,100%,0px,none);
+            }
+        }
+
+    }
+}

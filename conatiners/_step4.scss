@@ -1,0 +1,71 @@
+@import "../_varibels.scss/fonts-colors";
+@import "../media/media";
+@import "../mixins/mixin";
+
+
+
+.cont-1 {
+    @include cont(450px,auto,7px,$Alabaster);
+    overflow: hidden;
+    padding: 10px;
+    .first {
+        @include cont(100%,70px,0px,none);
+        @include flex(flex,space-between,center,nowrap);
+        @include border(1px,$Cool-gray);
+        border-color: transparent transparent $Cool-gray transparent;
+        .box-1 {
+            @include cont(75%,100%,0px,none);
+            h2 {
+                @include cont(100%,50%,0px,none);
+                @include title(17px,700,$Marine-blue,start);
+                @include flex(flex,start,center,nowrap);
+            }
+            .change {
+                @include cont(15%,50%,0px,none);
+                @include flex(flex,start,start,nowrap);
+                @include title(15px,400,$Cool-gray,start);
+                cursor: pointer;
+                transition-duration: 0.5s;
+            }
+            .change:hover {
+                color: $Purplishblue;
+            }
+        }
+        .price {
+            @include cont(25%,100%,0px,none);
+            @include title(15px,700,$Marine-blue,center)
+        }
+    }
+    .line , .line{
+        @include cont(100%,50px,0px,none);
+        @include flex(flex,space-between,center,nowrap);
+        .title {
+            @include cont(50%,100%,0px,none);
+            @include flex(flex,start,center,nowrap);
+            @include title(15px,500,$Cool-gray,center);
+        }
+        .pric-e {
+            @include cont(25%,100%,0px,none);
+            @include flex(flex,center,center,nowrap);
+            @include title(15px,500,$Marine-blue,center)
+        }
+    }
+}
+
+.cont-2 {
+    @include cont(430px,50px,0px,none);
+    @include flex(flex,space-between,center,nowrap);
+    margin: auto;
+
+    h2 {
+        @include cont(40%,100%,0px,none);
+        @include title(16px,700,$Cool-gray,start);
+        @include flex(flex,start,center,nowrap);
+    }
+
+    p {
+        @include cont(25%,100%,0px,none);
+        @include flex(flex,start,center,nowrap);
+        @include title(20px,700,$Purplishblue,start);
+    }
+}

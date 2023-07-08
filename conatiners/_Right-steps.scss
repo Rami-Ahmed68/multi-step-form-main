@@ -1,0 +1,53 @@
+@import "../_varibels.scss/fonts-colors";
+@import "../mixins/mixin";
+@import "../media/media";
+
+
+.steps {
+    @include cont(274px,100%,10px,none);
+    background: url(./assets/images/bg-sidebar-desktop.svg);
+    background-size: cover;
+    background-repeat:none;
+    overflow: hidden;
+    ul {
+        margin-top: 35px;
+        @include cont(100%,50%,0px,none);
+        @include flex(flex,center,center,wrap);
+        li {
+            @include cont(85%,25%,0px,none);
+            @include flex(flex,space-around,center,nowrap);
+            cursor: pointer;
+            .step-num {
+                @include cont(35px,35px,50%,none);
+                @include  flex(flex,center,center,nowrap);
+                @include border(0.5px,$White);
+                @include title(15px,500,$White,center);
+                transition-duration: 0.5s;
+            }
+            .step-num:hover {
+                background-color: $Light-blue;
+                color: $Marine-blue;
+            }
+            .step-info {
+                @include cont(70%,100%,0px,none);
+                p  {
+                    @include cont(100%,50%,0px,none);
+                    @include flex(flex,start,end,nowrap);
+                    @include title(15px,400,$Cool-gray,center);
+                    padding-bottom: 2px;
+                }
+                h5 {
+                    padding-top: 2px;
+                    @include cont(100%,50%,0px,none);
+                    @include title(15px,500,$White,start)
+                }
+            }
+        }
+        .active {
+            .step-num {
+                @include cont(35px,35px,50%,$Light-blue);
+                @include title(15px,500,$Marine-blue,center);
+            }
+        }
+    }
+}

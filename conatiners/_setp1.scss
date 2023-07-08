@@ -1,0 +1,80 @@
+
+@import "../_varibels.scss/fonts-colors";
+@import "../media/media";
+
+
+
+
+.container {
+    position: relative;
+    @include flex(flex,center,center,wrap);
+    .step-Title {
+        @include cont(100%,25%,0px,none);
+        h1 {
+            padding-left:10px; 
+            @include cont(100%,70%,0px,none);
+            @include flex(flex,start,end,nowrap);
+            @include title(30px,700,$Marine-blue,start);
+            padding-bottom: 2%;
+        }
+        p {
+            padding-left:10px; 
+            @include cont(100%,30%,0px,none);
+            @include flex(flex,start,start,nowrap);
+            @include title(15px,400,$Cool-gray,start);
+        }
+    }
+    .elements-stpe {
+        @include cont(100%,50%,0px,none);
+        @include flex(flex,space-between,center,wrap);
+        label {
+            @include cont(30%,30px,0px,none);
+            @include flex(flex,start,end,nowrap);
+            @include title(15px,500,$Marine-blue,center);
+        }
+        .erorr {
+            @include flex(flex,end,end,nowrap);
+            @include title(15px,500,$Strawberry-red,start);
+            // background-color: green;
+            @include cont(40%,30px,0px,none)
+        }
+        input {
+            @include cont(100%,50px,5px,none);
+            @include border(1px,$Cool-gray);
+            padding-left: 10px;
+            @include title(14px,500,$Marine-blue,start);
+            outline: none;
+        }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+    }
+    .buttons {
+        position: absolute;
+        bottom: 10%;
+        right: 11%;
+        @include flex(flex,space-between,center,nowrap);
+        @include cont(450px,15%,0px,none);
+        .next {
+            position: absolute;
+            right: 0%;
+            @include Button(25px,15px,7px,$Marine-blue,$White,17px,500);
+            transition-duration: 0.5s;
+            cursor: pointer;
+        }
+        .next:hover {
+            background-color: $Purplishblue;
+        }
+        .back {
+            cursor: pointer;
+            @include Button(0px,0px,0px,$White,$Cool-gray,17px,500);
+            transition-duration: 0.5s;
+            display: none;
+        }
+        .back:hover {
+            color: $Marine-blue;
+        }
+    }
+}

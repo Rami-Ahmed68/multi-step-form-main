@@ -1,0 +1,24 @@
+@import "../_varibels.scss/fonts-colors";
+@import "../mixins/mixin";
+@import "../media/media";
+
+
+.thank-you {
+    @include cont(100%,80%,0px,none);
+    @include flex(flex,center,center,wrap);
+    margin: 30px auto;
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    h2 {
+        @include cont(100%,30%,0px,none);
+        @include title(30px,700,$Marine-blue,center);
+        @include flex(flex,center,center,nowrap);
+    }
+    p {
+        @include cont(100%,30%,0px,none);
+        @include title(15px,500,$Cool-gray,center);
+        @include flex(flex,center,center,wrap);
+    }
+}

@@ -1,0 +1,15 @@
+@import "../_varibels.scss/fonts-colors";
+@import "../mixins/mixin";
+@import "../media/media";
+
+
+.container {
+    @include cont(942px,600px,15px,$White);
+    @include flex(flex,space-between,center,wra);
+    padding: 15px;
+    .right-cont {
+        @include cont(450px,100%,0px,none);
+        margin: auto;
+        overflow: hidden;
+    }
+}

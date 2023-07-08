@@ -1,0 +1,91 @@
+@import "../_varibels.scss/fonts-colors";
+@import "../media/media";
+
+
+
+.elements-stpe {
+    .card {
+        @include cont(136px,161px,10px,none);
+        padding: 10px;
+        @include border(1px,$Cool-gray);
+        cursor: pointer;
+        transition-duration: 0.5s;
+        img {
+            margin: 5px ;
+        }
+        .info {
+            @include cont(100%,70%,0px,none);
+            margin-left: auto;
+            padding-top: 30%;
+            h3 {
+                @include cont(100%,30%,0px,none);
+                @include title(20px,700,$Marine-blue,start);
+                margin-bottom: 5% ;
+            }
+            .price {
+                @include cont(100%,30%,0px,none);
+                @include title(15px,400,$Cool-gray,start);
+                @include flex(flex,start,center,nowrap);
+            }
+            .year {
+                @include cont(100%,30%,0px,none);
+                @include title(15px,400,$Marine-blue,start);
+            }
+        }
+    }
+    .card:hover {
+        border-color: $Purplishblue;
+    }
+    .activecard {
+        @extend .card;
+        background-color: $Alabaster;
+        @extend .card:hover
+    }
+}
+
+.mod-cont {
+    @include cont(100%,50px,7px,$Alabaster);
+    @include flex(flex,center,center,nowrap);
+    .mod-arm-cont{
+        position: relative;
+        @include cont(38px,20px,10px,$Marine-blue);
+        @include flex(flex,center,center,nowrap);
+    }
+    .mod-arm {
+        position: absolute;
+        left: 10%;
+        @include cont(13px,13px,50%,$White); 
+        cursor: pointer;
+    }
+    .active {
+        color: $Marine-blue;
+    }
+    p {
+        @include cont(20%,100%,0px,none);
+        @include flex(flex,center,center,nowrap);
+        @include title(15px,500,$Cool-gray,center);
+        margin: 0px 10px;
+    }
+}
+// .mode {
+//     @include cont(100%,15%,5px,$Alabaster);
+//     @include flex(flex,center,center,nowrap);
+//     p {
+//         @include title(15px,500,$Marine-blue,auto)
+//     }
+//     .mode-cont {
+//         padding: 5px;
+//         margin: 0px 30px;
+//         @include cont(38px,20px,10px,$Marine-blue);
+//         position: relative;
+//         @include flex(flex,center,center,wrap);
+
+//         .mode-arm {
+//             position: absolute;
+//             left: 10%;
+//             cursor: pointer;
+//             @include flex(flex,center,center,nowrap);
+//             @include cont(13px,13px,50%,$White);
+//         }
+//     }
+// }

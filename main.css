@@ -1,0 +1,3028 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@media (max-width: 770px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: #f0f6ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .container .buttons {
+    width: 90%;
+    height: 15%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+  }
+  .container .buttons .back {
+    margin-bottom: 5%;
+  }
+  .container .steps {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+    background: url(./assets/images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+  }
+  .container .steps ul {
+    width: 70%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    margin: 5% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .steps ul li .step-info {
+    display: none;
+  }
+  .container .right-cont {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -35%;
+    padding: 25px 10px;
+    position: absolute;
+    z-index: 100;
+    top: 41%;
+    overflow: unset;
+  }
+  .container .right-cont .step-Title {
+    width: 100%;
+    height: 25%;
+    border-radius: 0px;
+    background-color: none;
+    margin-bottom: 20px;
+  }
+  .container .right-cont .step-Title h1 {
+    width: 100%;
+    height: 60%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .step-Title p {
+    width: 80%;
+    height: 40%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .elements-stpe label {
+    width: 40%;
+    height: 30px;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: center;
+    margin: auto;
+  }
+  .container .right-cont .elements-stpe .erorr {
+    color: red;
+  }
+  .container .right-cont .elements-stpe input {
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: none;
+  }
+  .container .card, .container .elements-stpe .activecard, .elements-stpe .container .activecard {
+    width: 90%;
+    height: 80px;
+    border-radius: 10px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 2% 0% 2% 5%;
+  }
+  .container .card .info, .container .elements-stpe .activecard .info, .elements-stpe .container .activecard .info {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 0px;
+  }
+  .container .card .info h3, .container .elements-stpe .activecard .info h3, .elements-stpe .container .activecard .info h3 {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .card .info p, .container .elements-stpe .activecard .info p, .elements-stpe .container .activecard .info p {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .option {
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: none;
+    margin: 2% 0% 2% 5%;
+    padding-right: 20px;
+  }
+  .container .option .checkbox {
+    width: 12%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 10px  5px;
+    overflow: hidden;
+  }
+  .container .option .checkbox input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .container .option .info {
+    width: 60%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    margin-left: -10%;
+  }
+  .container .option .info h2 {
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .info p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9699ab;
+    text-align: start;
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .price {
+    width: 15%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #473dff;
+    text-align: center;
+  }
+  .container .cont-2 {
+    width: 300px;
+    height: 50px;
+    border-radius: 0px;
+    background-color: none;
+    overflow: hidden;
+    padding-right: 5%;
+  }
+  .container .cont-2 h2 {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: #f0f6ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .container .buttons {
+    width: 90%;
+    height: 15%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+  }
+  .container .buttons .back {
+    margin-bottom: 5%;
+  }
+  .container .steps {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+    background: url(./assets/images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+  }
+  .container .steps ul {
+    width: 70%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    margin: 5% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .steps ul li .step-info {
+    display: none;
+  }
+  .container .right-cont {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -35%;
+    padding: 25px 10px;
+    position: absolute;
+    z-index: 100;
+    top: 41%;
+    overflow: unset;
+  }
+  .container .right-cont .step-Title {
+    width: 100%;
+    height: 25%;
+    border-radius: 0px;
+    background-color: none;
+    margin-bottom: 20px;
+  }
+  .container .right-cont .step-Title h1 {
+    width: 100%;
+    height: 60%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .step-Title p {
+    width: 80%;
+    height: 40%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .elements-stpe label {
+    width: 40%;
+    height: 30px;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: center;
+    margin: auto;
+  }
+  .container .right-cont .elements-stpe .erorr {
+    color: red;
+  }
+  .container .right-cont .elements-stpe input {
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: none;
+  }
+  .container .card, .container .elements-stpe .activecard, .elements-stpe .container .activecard {
+    width: 90%;
+    height: 80px;
+    border-radius: 10px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 2% 0% 2% 5%;
+  }
+  .container .card .info, .container .elements-stpe .activecard .info, .elements-stpe .container .activecard .info {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 0px;
+  }
+  .container .card .info h3, .container .elements-stpe .activecard .info h3, .elements-stpe .container .activecard .info h3 {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .card .info p, .container .elements-stpe .activecard .info p, .elements-stpe .container .activecard .info p {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .option {
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: none;
+    margin: 2% 0% 2% 5%;
+    padding-right: 20px;
+  }
+  .container .option .checkbox {
+    width: 12%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 10px  5px;
+    overflow: hidden;
+  }
+  .container .option .checkbox input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .container .option .info {
+    width: 60%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    margin-left: -10%;
+  }
+  .container .option .info h2 {
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .info p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9699ab;
+    text-align: start;
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .price {
+    width: 15%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #473dff;
+    text-align: center;
+  }
+  .container .cont-2 {
+    width: 300px;
+    height: 50px;
+    border-radius: 0px;
+    background-color: none;
+    overflow: hidden;
+    padding-right: 5%;
+  }
+  .container .cont-2 h2 {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+  }
+}
+
+.steps {
+  width: 274px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: none;
+  background: url(./assets/images/bg-sidebar-desktop.svg);
+  background-size: cover;
+  background-repeat: none;
+  overflow: hidden;
+}
+
+.steps ul {
+  margin-top: 35px;
+  width: 100%;
+  height: 50%;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.steps ul li {
+  width: 85%;
+  height: 25%;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  cursor: pointer;
+}
+
+.steps ul li .step-num {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border: 0.5px white solid;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.steps ul li .step-num:hover {
+  background-color: #bfe2fd;
+  color: #02295a;
+}
+
+.steps ul li .step-info {
+  width: 70%;
+  height: 100%;
+  border-radius: 0px;
+  background-color: none;
+}
+
+.steps ul li .step-info p {
+  width: 100%;
+  height: 50%;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 15px;
+  font-weight: 400;
+  color: #9699ab;
+  text-align: center;
+  padding-bottom: 2px;
+}
+
+.steps ul li .step-info h5 {
+  padding-top: 2px;
+  width: 100%;
+  height: 50%;
+  border-radius: 0px;
+  background-color: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-align: start;
+}
+
+.steps ul .active .step-num {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #bfe2fd;
+  font-size: 15px;
+  font-weight: 500;
+  color: #02295a;
+  text-align: center;
+}
+
+@media (max-width: 770px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: #f0f6ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .container .buttons {
+    width: 90%;
+    height: 15%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+  }
+  .container .buttons .back {
+    margin-bottom: 5%;
+  }
+  .container .steps {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+    background: url(./assets/images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+  }
+  .container .steps ul {
+    width: 70%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    margin: 5% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .steps ul li .step-info {
+    display: none;
+  }
+  .container .right-cont {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -35%;
+    padding: 25px 10px;
+    position: absolute;
+    z-index: 100;
+    top: 41%;
+    overflow: unset;
+  }
+  .container .right-cont .step-Title {
+    width: 100%;
+    height: 25%;
+    border-radius: 0px;
+    background-color: none;
+    margin-bottom: 20px;
+  }
+  .container .right-cont .step-Title h1 {
+    width: 100%;
+    height: 60%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .step-Title p {
+    width: 80%;
+    height: 40%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .elements-stpe label {
+    width: 40%;
+    height: 30px;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: center;
+    margin: auto;
+  }
+  .container .right-cont .elements-stpe .erorr {
+    color: red;
+  }
+  .container .right-cont .elements-stpe input {
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: none;
+  }
+  .container .card, .container .elements-stpe .activecard, .elements-stpe .container .activecard {
+    width: 90%;
+    height: 80px;
+    border-radius: 10px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 2% 0% 2% 5%;
+  }
+  .container .card .info, .container .elements-stpe .activecard .info, .elements-stpe .container .activecard .info {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 0px;
+  }
+  .container .card .info h3, .container .elements-stpe .activecard .info h3, .elements-stpe .container .activecard .info h3 {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .card .info p, .container .elements-stpe .activecard .info p, .elements-stpe .container .activecard .info p {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .option {
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: none;
+    margin: 2% 0% 2% 5%;
+    padding-right: 20px;
+  }
+  .container .option .checkbox {
+    width: 12%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 10px  5px;
+    overflow: hidden;
+  }
+  .container .option .checkbox input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .container .option .info {
+    width: 60%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    margin-left: -10%;
+  }
+  .container .option .info h2 {
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .info p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9699ab;
+    text-align: start;
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .price {
+    width: 15%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #473dff;
+    text-align: center;
+  }
+  .container .cont-2 {
+    width: 300px;
+    height: 50px;
+    border-radius: 0px;
+    background-color: none;
+    overflow: hidden;
+    padding-right: 5%;
+  }
+  .container .cont-2 h2 {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+  }
+}
+
+.container {
+  width: 942px;
+  height: 600px;
+  border-radius: 15px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wra;
+      flex-wrap: wra;
+  padding: 15px;
+}
+
+.container .right-cont {
+  width: 450px;
+  height: 100%;
+  border-radius: 0px;
+  background-color: none;
+  margin: auto;
+  overflow: hidden;
+}
+
+@media (max-width: 770px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: #f0f6ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .container .buttons {
+    width: 90%;
+    height: 15%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+  }
+  .container .buttons .back {
+    margin-bottom: 5%;
+  }
+  .container .steps {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+    background: url(./assets/images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+  }
+  .container .steps ul {
+    width: 70%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    margin: 5% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .steps ul li .step-info {
+    display: none;
+  }
+  .container .right-cont {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -35%;
+    padding: 25px 10px;
+    position: absolute;
+    z-index: 100;
+    top: 41%;
+    overflow: unset;
+  }
+  .container .right-cont .step-Title {
+    width: 100%;
+    height: 25%;
+    border-radius: 0px;
+    background-color: none;
+    margin-bottom: 20px;
+  }
+  .container .right-cont .step-Title h1 {
+    width: 100%;
+    height: 60%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .step-Title p {
+    width: 80%;
+    height: 40%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .elements-stpe label {
+    width: 40%;
+    height: 30px;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: center;
+    margin: auto;
+  }
+  .container .right-cont .elements-stpe .erorr {
+    color: red;
+  }
+  .container .right-cont .elements-stpe input {
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: none;
+  }
+  .container .card, .container .elements-stpe .activecard, .elements-stpe .container .activecard {
+    width: 90%;
+    height: 80px;
+    border-radius: 10px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 2% 0% 2% 5%;
+  }
+  .container .card .info, .container .elements-stpe .activecard .info, .elements-stpe .container .activecard .info {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 0px;
+  }
+  .container .card .info h3, .container .elements-stpe .activecard .info h3, .elements-stpe .container .activecard .info h3 {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .card .info p, .container .elements-stpe .activecard .info p, .elements-stpe .container .activecard .info p {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .option {
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: none;
+    margin: 2% 0% 2% 5%;
+    padding-right: 20px;
+  }
+  .container .option .checkbox {
+    width: 12%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 10px  5px;
+    overflow: hidden;
+  }
+  .container .option .checkbox input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .container .option .info {
+    width: 60%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    margin-left: -10%;
+  }
+  .container .option .info h2 {
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .info p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9699ab;
+    text-align: start;
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .price {
+    width: 15%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #473dff;
+    text-align: center;
+  }
+  .container .cont-2 {
+    width: 300px;
+    height: 50px;
+    border-radius: 0px;
+    background-color: none;
+    overflow: hidden;
+    padding-right: 5%;
+  }
+  .container .cont-2 h2 {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+  }
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .step-Title {
+  width: 100%;
+  height: 25%;
+  border-radius: 0px;
+  background-color: none;
+}
+
+.container .step-Title h1 {
+  padding-left: 10px;
+  width: 100%;
+  height: 70%;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 30px;
+  font-weight: 700;
+  color: #02295a;
+  text-align: start;
+  padding-bottom: 2%;
+}
+
+.container .step-Title p {
+  padding-left: 10px;
+  width: 100%;
+  height: 30%;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 15px;
+  font-weight: 400;
+  color: #9699ab;
+  text-align: start;
+}
+
+.container .elements-stpe {
+  width: 100%;
+  height: 50%;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .elements-stpe label {
+  width: 30%;
+  height: 30px;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 15px;
+  font-weight: 500;
+  color: #02295a;
+  text-align: center;
+}
+
+.container .elements-stpe .erorr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ed3548;
+  text-align: start;
+  width: 40%;
+  height: 30px;
+  border-radius: 0px;
+  background-color: none;
+}
+
+.container .elements-stpe input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: none;
+  border: 1px #9699ab solid;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #02295a;
+  text-align: start;
+  outline: none;
+}
+
+.container .elements-stpe input[type=number]::-webkit-inner-spin-button,
+.container .elements-stpe input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container .buttons {
+  position: absolute;
+  bottom: 10%;
+  right: 11%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 450px;
+  height: 15%;
+  border-radius: 0px;
+  background-color: none;
+}
+
+.container .buttons .next {
+  position: absolute;
+  right: 0%;
+  padding: 15px 25px;
+  border-radius: 7px;
+  border: none;
+  background-Color: #02295a;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.container .buttons .next:hover {
+  background-color: #473dff;
+}
+
+.container .buttons .back {
+  cursor: pointer;
+  padding: 0px 0px;
+  border-radius: 0px;
+  border: none;
+  background-Color: white;
+  color: #9699ab;
+  font-size: 17px;
+  font-weight: 500;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  display: none;
+}
+
+.container .buttons .back:hover {
+  color: #02295a;
+}
+
+@media (max-width: 770px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: #f0f6ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .container .buttons {
+    width: 90%;
+    height: 15%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+  }
+  .container .buttons .back {
+    margin-bottom: 5%;
+  }
+  .container .steps {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+    background: url(./assets/images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+  }
+  .container .steps ul {
+    width: 70%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    margin: 5% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .steps ul li .step-info {
+    display: none;
+  }
+  .container .right-cont {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -35%;
+    padding: 25px 10px;
+    position: absolute;
+    z-index: 100;
+    top: 41%;
+    overflow: unset;
+  }
+  .container .right-cont .step-Title {
+    width: 100%;
+    height: 25%;
+    border-radius: 0px;
+    background-color: none;
+    margin-bottom: 20px;
+  }
+  .container .right-cont .step-Title h1 {
+    width: 100%;
+    height: 60%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .step-Title p {
+    width: 80%;
+    height: 40%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .elements-stpe label {
+    width: 40%;
+    height: 30px;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: center;
+    margin: auto;
+  }
+  .container .right-cont .elements-stpe .erorr {
+    color: red;
+  }
+  .container .right-cont .elements-stpe input {
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: none;
+  }
+  .container .card, .container .elements-stpe .activecard, .elements-stpe .container .activecard {
+    width: 90%;
+    height: 80px;
+    border-radius: 10px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 2% 0% 2% 5%;
+  }
+  .container .card .info, .container .elements-stpe .activecard .info, .elements-stpe .container .activecard .info {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 0px;
+  }
+  .container .card .info h3, .container .elements-stpe .activecard .info h3, .elements-stpe .container .activecard .info h3 {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .card .info p, .container .elements-stpe .activecard .info p, .elements-stpe .container .activecard .info p {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .option {
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: none;
+    margin: 2% 0% 2% 5%;
+    padding-right: 20px;
+  }
+  .container .option .checkbox {
+    width: 12%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 10px  5px;
+    overflow: hidden;
+  }
+  .container .option .checkbox input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .container .option .info {
+    width: 60%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    margin-left: -10%;
+  }
+  .container .option .info h2 {
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .info p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9699ab;
+    text-align: start;
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .price {
+    width: 15%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #473dff;
+    text-align: center;
+  }
+  .container .cont-2 {
+    width: 300px;
+    height: 50px;
+    border-radius: 0px;
+    background-color: none;
+    overflow: hidden;
+    padding-right: 5%;
+  }
+  .container .cont-2 h2 {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+  }
+}
+
+.elements-stpe .card, .elements-stpe .activecard {
+  width: 136px;
+  height: 161px;
+  border-radius: 10px;
+  background-color: none;
+  padding: 10px;
+  border: 1px #9699ab solid;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.elements-stpe .card img, .elements-stpe .activecard img {
+  margin: 5px;
+}
+
+.elements-stpe .card .info, .elements-stpe .activecard .info {
+  width: 100%;
+  height: 70%;
+  border-radius: 0px;
+  background-color: none;
+  margin-left: auto;
+  padding-top: 30%;
+}
+
+.elements-stpe .card .info h3, .elements-stpe .activecard .info h3 {
+  width: 100%;
+  height: 30%;
+  border-radius: 0px;
+  background-color: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #02295a;
+  text-align: start;
+  margin-bottom: 5%;
+}
+
+.elements-stpe .card .info .price, .elements-stpe .activecard .info .price {
+  width: 100%;
+  height: 30%;
+  border-radius: 0px;
+  background-color: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #9699ab;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.elements-stpe .card .info .year, .elements-stpe .activecard .info .year {
+  width: 100%;
+  height: 30%;
+  border-radius: 0px;
+  background-color: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #02295a;
+  text-align: start;
+}
+
+.elements-stpe .card:hover, .elements-stpe .activecard {
+  border-color: #473dff;
+}
+
+.elements-stpe .activecard {
+  background-color: #fafbff;
+}
+
+.mod-cont {
+  width: 100%;
+  height: 50px;
+  border-radius: 7px;
+  background-color: #fafbff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.mod-cont .mod-arm-cont {
+  position: relative;
+  width: 38px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #02295a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.mod-cont .mod-arm {
+  position: absolute;
+  left: 10%;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.mod-cont .active {
+  color: #02295a;
+}
+
+.mod-cont p {
+  width: 20%;
+  height: 100%;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 15px;
+  font-weight: 500;
+  color: #9699ab;
+  text-align: center;
+  margin: 0px 10px;
+}
+
+@media (max-width: 770px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: #f0f6ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .container .buttons {
+    width: 90%;
+    height: 15%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+  }
+  .container .buttons .back {
+    margin-bottom: 5%;
+  }
+  .container .steps {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+    background: url(./assets/images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+  }
+  .container .steps ul {
+    width: 70%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    margin: 5% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .steps ul li .step-info {
+    display: none;
+  }
+  .container .right-cont {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -35%;
+    padding: 25px 10px;
+    position: absolute;
+    z-index: 100;
+    top: 41%;
+    overflow: unset;
+  }
+  .container .right-cont .step-Title {
+    width: 100%;
+    height: 25%;
+    border-radius: 0px;
+    background-color: none;
+    margin-bottom: 20px;
+  }
+  .container .right-cont .step-Title h1 {
+    width: 100%;
+    height: 60%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .step-Title p {
+    width: 80%;
+    height: 40%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .elements-stpe label {
+    width: 40%;
+    height: 30px;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: center;
+    margin: auto;
+  }
+  .container .right-cont .elements-stpe .erorr {
+    color: red;
+  }
+  .container .right-cont .elements-stpe input {
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: none;
+  }
+  .container .card, .container .elements-stpe .activecard, .elements-stpe .container .activecard {
+    width: 90%;
+    height: 80px;
+    border-radius: 10px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 2% 0% 2% 5%;
+  }
+  .container .card .info, .container .elements-stpe .activecard .info, .elements-stpe .container .activecard .info {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 0px;
+  }
+  .container .card .info h3, .container .elements-stpe .activecard .info h3, .elements-stpe .container .activecard .info h3 {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .card .info p, .container .elements-stpe .activecard .info p, .elements-stpe .container .activecard .info p {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .option {
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: none;
+    margin: 2% 0% 2% 5%;
+    padding-right: 20px;
+  }
+  .container .option .checkbox {
+    width: 12%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 10px  5px;
+    overflow: hidden;
+  }
+  .container .option .checkbox input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .container .option .info {
+    width: 60%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    margin-left: -10%;
+  }
+  .container .option .info h2 {
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .info p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9699ab;
+    text-align: start;
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .price {
+    width: 15%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #473dff;
+    text-align: center;
+  }
+  .container .cont-2 {
+    width: 300px;
+    height: 50px;
+    border-radius: 0px;
+    background-color: none;
+    overflow: hidden;
+    padding-right: 5%;
+  }
+  .container .cont-2 h2 {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+  }
+}
+
+.elements-stpe .option {
+  width: 450px;
+  height: 81px;
+  border-radius: 10px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 10px;
+  border: 1px #9699ab solid;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.elements-stpe .option:hover {
+  border-color: #473dff;
+}
+
+.elements-stpe .active {
+  background-color: #fafbff;
+}
+
+.elements-stpe .checkbox {
+  width: 15%;
+  height: 100%;
+  border-radius: 0px;
+  background-color: none;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.elements-stpe .checkbox input {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.elements-stpe .info {
+  width: 50%;
+  height: 100%;
+  border-radius: 0px;
+  background-color: none;
+  margin-left: -10%;
+}
+
+.elements-stpe .info h2 {
+  width: 100%;
+  height: 50%;
+  border-radius: 0px;
+  background-color: none;
+  font-size: 19px;
+  font-weight: 500;
+  color: #02295a;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.elements-stpe .info p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9699ab;
+  text-align: start;
+  width: 100%;
+  height: 50%;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.elements-stpe .price {
+  width: 25%;
+  height: 100%;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 15px;
+  font-weight: 500;
+  color: #473dff;
+  text-align: center;
+}
+
+@media (max-width: 770px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: #f0f6ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .container .buttons {
+    width: 90%;
+    height: 15%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+  }
+  .container .buttons .back {
+    margin-bottom: 5%;
+  }
+  .container .steps {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+    background: url(./assets/images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+  }
+  .container .steps ul {
+    width: 70%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    margin: 5% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .steps ul li .step-info {
+    display: none;
+  }
+  .container .right-cont {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -35%;
+    padding: 25px 10px;
+    position: absolute;
+    z-index: 100;
+    top: 41%;
+    overflow: unset;
+  }
+  .container .right-cont .step-Title {
+    width: 100%;
+    height: 25%;
+    border-radius: 0px;
+    background-color: none;
+    margin-bottom: 20px;
+  }
+  .container .right-cont .step-Title h1 {
+    width: 100%;
+    height: 60%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .step-Title p {
+    width: 80%;
+    height: 40%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .elements-stpe label {
+    width: 40%;
+    height: 30px;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: center;
+    margin: auto;
+  }
+  .container .right-cont .elements-stpe .erorr {
+    color: red;
+  }
+  .container .right-cont .elements-stpe input {
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: none;
+  }
+  .container .card, .container .elements-stpe .activecard, .elements-stpe .container .activecard {
+    width: 90%;
+    height: 80px;
+    border-radius: 10px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 2% 0% 2% 5%;
+  }
+  .container .card .info, .container .elements-stpe .activecard .info, .elements-stpe .container .activecard .info {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 0px;
+  }
+  .container .card .info h3, .container .elements-stpe .activecard .info h3, .elements-stpe .container .activecard .info h3 {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .card .info p, .container .elements-stpe .activecard .info p, .elements-stpe .container .activecard .info p {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .option {
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: none;
+    margin: 2% 0% 2% 5%;
+    padding-right: 20px;
+  }
+  .container .option .checkbox {
+    width: 12%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 10px  5px;
+    overflow: hidden;
+  }
+  .container .option .checkbox input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .container .option .info {
+    width: 60%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    margin-left: -10%;
+  }
+  .container .option .info h2 {
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .info p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9699ab;
+    text-align: start;
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .price {
+    width: 15%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #473dff;
+    text-align: center;
+  }
+  .container .cont-2 {
+    width: 300px;
+    height: 50px;
+    border-radius: 0px;
+    background-color: none;
+    overflow: hidden;
+    padding-right: 5%;
+  }
+  .container .cont-2 h2 {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+  }
+}
+
+.cont-1 {
+  width: 450px;
+  height: auto;
+  border-radius: 7px;
+  background-color: #fafbff;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.cont-1 .first {
+  width: 100%;
+  height: 70px;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border: 1px #9699ab solid;
+  border-color: transparent transparent #9699ab transparent;
+}
+
+.cont-1 .first .box-1 {
+  width: 75%;
+  height: 100%;
+  border-radius: 0px;
+  background-color: none;
+}
+
+.cont-1 .first .box-1 h2 {
+  width: 100%;
+  height: 50%;
+  border-radius: 0px;
+  background-color: none;
+  font-size: 17px;
+  font-weight: 700;
+  color: #02295a;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.cont-1 .first .box-1 .change {
+  width: 15%;
+  height: 50%;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 15px;
+  font-weight: 400;
+  color: #9699ab;
+  text-align: start;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.cont-1 .first .box-1 .change:hover {
+  color: #473dff;
+}
+
+.cont-1 .first .price {
+  width: 25%;
+  height: 100%;
+  border-radius: 0px;
+  background-color: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: #02295a;
+  text-align: center;
+}
+
+.cont-1 .line, .cont-1 .line {
+  width: 100%;
+  height: 50px;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.cont-1 .line .title, .cont-1 .line .title {
+  width: 50%;
+  height: 100%;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 15px;
+  font-weight: 500;
+  color: #9699ab;
+  text-align: center;
+}
+
+.cont-1 .line .pric-e, .cont-1 .line .pric-e {
+  width: 25%;
+  height: 100%;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 15px;
+  font-weight: 500;
+  color: #02295a;
+  text-align: center;
+}
+
+.cont-2 {
+  width: 430px;
+  height: 50px;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: auto;
+}
+
+.cont-2 h2 {
+  width: 40%;
+  height: 100%;
+  border-radius: 0px;
+  background-color: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #9699ab;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.cont-2 p {
+  width: 25%;
+  height: 100%;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 20px;
+  font-weight: 700;
+  color: #473dff;
+  text-align: start;
+}
+
+@media (max-width: 770px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: #f0f6ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .container .buttons {
+    width: 90%;
+    height: 15%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+  }
+  .container .buttons .back {
+    margin-bottom: 5%;
+  }
+  .container .steps {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+    background: url(./assets/images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+  }
+  .container .steps ul {
+    width: 70%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    margin: 5% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .steps ul li .step-info {
+    display: none;
+  }
+  .container .right-cont {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -35%;
+    padding: 25px 10px;
+    position: absolute;
+    z-index: 100;
+    top: 41%;
+    overflow: unset;
+  }
+  .container .right-cont .step-Title {
+    width: 100%;
+    height: 25%;
+    border-radius: 0px;
+    background-color: none;
+    margin-bottom: 20px;
+  }
+  .container .right-cont .step-Title h1 {
+    width: 100%;
+    height: 60%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .step-Title p {
+    width: 80%;
+    height: 40%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .right-cont .elements-stpe label {
+    width: 40%;
+    height: 30px;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: center;
+    margin: auto;
+  }
+  .container .right-cont .elements-stpe .erorr {
+    color: red;
+  }
+  .container .right-cont .elements-stpe input {
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: none;
+  }
+  .container .card, .container .elements-stpe .activecard, .elements-stpe .container .activecard {
+    width: 90%;
+    height: 80px;
+    border-radius: 10px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 2% 0% 2% 5%;
+  }
+  .container .card .info, .container .elements-stpe .activecard .info, .elements-stpe .container .activecard .info {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 0px;
+  }
+  .container .card .info h3, .container .elements-stpe .activecard .info h3, .elements-stpe .container .activecard .info h3 {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .card .info p, .container .elements-stpe .activecard .info p, .elements-stpe .container .activecard .info p {
+    width: 100%;
+    height: 30%;
+    border-radius: 0px;
+    background-color: none;
+  }
+  .container .option {
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: none;
+    margin: 2% 0% 2% 5%;
+    padding-right: 20px;
+  }
+  .container .option .checkbox {
+    width: 12%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    padding: 10px  5px;
+    overflow: hidden;
+  }
+  .container .option .checkbox input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .container .option .info {
+    width: 60%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    margin-left: -10%;
+  }
+  .container .option .info h2 {
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #02295a;
+    text-align: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .info p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9699ab;
+    text-align: start;
+    width: 100%;
+    height: 50%;
+    border-radius: 0px;
+    background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .container .option .price {
+    width: 15%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #473dff;
+    text-align: center;
+  }
+  .container .cont-2 {
+    width: 300px;
+    height: 50px;
+    border-radius: 0px;
+    background-color: none;
+    overflow: hidden;
+    padding-right: 5%;
+  }
+  .container .cont-2 h2 {
+    width: 70%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: none;
+  }
+}
+
+.thank-you {
+  width: 100%;
+  height: 80%;
+  border-radius: 0px;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px auto;
+}
+
+.thank-you img {
+  width: 80px;
+  height: 80px;
+}
+
+.thank-you h2 {
+  width: 100%;
+  height: 30%;
+  border-radius: 0px;
+  background-color: none;
+  font-size: 30px;
+  font-weight: 700;
+  color: #02295a;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.thank-you p {
+  width: 100%;
+  height: 30%;
+  border-radius: 0px;
+  background-color: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #9699ab;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body {
+  height: 100vh;
+  background-color: #f0f6ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+/*# sourceMappingURL=main.css.map */

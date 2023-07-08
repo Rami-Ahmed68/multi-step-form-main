@@ -1,0 +1,53 @@
+@import "../_varibels.scss/fonts-colors";
+@import "../media/media";
+@import "../mixins/mixin";
+
+
+
+.elements-stpe {
+    .option {
+        @include cont(450px,81px,10px,none);
+        @include flex(flex,space-between,center,nowrap);
+        padding: 10px;
+        @include border(1px,$Cool-gray);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .option:hover {
+        border-color: $Purplishblue;
+    }
+    .active {
+        background-color: $Alabaster;
+    }
+    .checkbox {
+        @include cont(15%,100%,0px,none);
+        padding: 20px;
+        overflow: hidden;
+        // background-color:red ;
+        input {
+            width: 22px;
+            height: 22px;
+            cursor: pointer;
+        }
+    }
+    .info {
+        // background-color: green;
+        @include cont(50%,100%,0px,none);
+        margin-left: -10%;
+        h2 {
+            @include cont(100%,50%,0px,none);
+            @include title(19px,500,$Marine-blue,start);
+            @include flex(flex,start,center,nowrap);
+        }
+        p {
+            @include title(14px,400,$Cool-gray,start);
+            @include cont(100%,50%,0px,none);
+            @include flex(flex,start,center,nowrap);
+        }
+    }
+    .price {
+        @include cont(25%,100%,0px,none);
+        @include flex(flex,center,center,nowrap);
+        @include title(15px,500,$Purplishblue,center);
+    }
+}

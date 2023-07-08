@@ -1,0 +1,36 @@
+
+
+@mixin  cont($width,$height,$radius,$backgroundColor) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    background-color: $backgroundColor;
+}
+
+@mixin title($size,$Weight,$color,$align) {
+    font-size: $size;
+    font-weight: $Weight;
+    color: $color;
+    text-align: $align;
+}
+
+@mixin  Button($width,$height,$radius,$backgroundColor,$color,$size,$weight) {
+    padding:  $height $width;
+    border-radius: $radius;
+    border: none;
+    background-Color:$backgroundColor;
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin  border($border-Width,$border-color) {
+    border: $border-Width $border-color solid;
+}
+
+@mixin  flex($flex,$just,$align,$wrap) {
+    display: $flex;
+    justify-content: $just;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
